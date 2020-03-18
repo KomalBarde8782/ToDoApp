@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		040F6B5823F9A5CA0069498D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F6B5723F9A5CA0069498D /* AppDelegate.swift */; };
-		040F6B5A23F9A5CA0069498D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F6B5923F9A5CA0069498D /* ViewController.swift */; };
 		040F6B5D23F9A5CA0069498D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040F6B5B23F9A5CA0069498D /* Main.storyboard */; };
 		040F6B6023F9A5CA0069498D /* TodoApp_Machine_Komal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 040F6B5E23F9A5CA0069498D /* TodoApp_Machine_Komal.xcdatamodeld */; };
 		040F6B6223F9A5CA0069498D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040F6B6123F9A5CA0069498D /* Assets.xcassets */; };
 		040F6B6523F9A5CA0069498D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040F6B6323F9A5CA0069498D /* LaunchScreen.storyboard */; };
+		040F6B6D23F9A6410069498D /* AllListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F6B6C23F9A6410069498D /* AllListViewController.swift */; };
+		040F6B6F23F9A6590069498D /* AddNewToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F6B6E23F9A6580069498D /* AddNewToDoListViewController.swift */; };
+		040F6B7123F9AAC80069498D /* Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F6B7023F9AAC80069498D /* Delegates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		040F6B5423F9A5CA0069498D /* TodoApp_Machine_Komal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoApp_Machine_Komal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		040F6B5723F9A5CA0069498D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		040F6B5923F9A5CA0069498D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		040F6B5C23F9A5CA0069498D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		040F6B5F23F9A5CA0069498D /* TodoApp_Machine_Komal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TodoApp_Machine_Komal.xcdatamodel; sourceTree = "<group>"; };
 		040F6B6123F9A5CA0069498D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		040F6B6423F9A5CA0069498D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		040F6B6623F9A5CA0069498D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		040F6B6C23F9A6410069498D /* AllListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllListViewController.swift; sourceTree = "<group>"; };
+		040F6B6E23F9A6580069498D /* AddNewToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewToDoListViewController.swift; sourceTree = "<group>"; };
+		040F6B7023F9AAC80069498D /* Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +61,9 @@
 			isa = PBXGroup;
 			children = (
 				040F6B5723F9A5CA0069498D /* AppDelegate.swift */,
-				040F6B5923F9A5CA0069498D /* ViewController.swift */,
+				040F6B6C23F9A6410069498D /* AllListViewController.swift */,
+				040F6B6E23F9A6580069498D /* AddNewToDoListViewController.swift */,
+				040F6B7023F9AAC80069498D /* Delegates.swift */,
 				040F6B5B23F9A5CA0069498D /* Main.storyboard */,
 				040F6B6123F9A5CA0069498D /* Assets.xcassets */,
 				040F6B6323F9A5CA0069498D /* LaunchScreen.storyboard */,
@@ -139,8 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040F6B6D23F9A6410069498D /* AllListViewController.swift in Sources */,
+				040F6B7123F9AAC80069498D /* Delegates.swift in Sources */,
+				040F6B6F23F9A6590069498D /* AddNewToDoListViewController.swift in Sources */,
 				040F6B6023F9A5CA0069498D /* TodoApp_Machine_Komal.xcdatamodeld in Sources */,
-				040F6B5A23F9A5CA0069498D /* ViewController.swift in Sources */,
 				040F6B5823F9A5CA0069498D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,7 +289,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TodoApp_Machine_Komal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "swarajyait.TodoApp-Machine-Komal";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swarajyait.TodoApp-Machine-Komal";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -295,7 +303,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TodoApp_Machine_Komal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "swarajyait.TodoApp-Machine-Komal";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swarajyait.TodoApp-Machine-Komal";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
